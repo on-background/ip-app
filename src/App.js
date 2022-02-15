@@ -12,7 +12,7 @@ function App() {
     // Fetching the API once when the
     // component is mounted
     useEffect(() => {
-      Axios.get('/json/').then((res) => {
+      Axios.get('https://cors-anywhere.herokuapp.com/https://ipapi.co/json/').then((res) => {
         setIpDetails(res.data);
         setLat(res.data.latitude);
         setLon(res.data.longitude);
